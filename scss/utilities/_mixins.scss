@@ -1,0 +1,68 @@
+//_mixins.scss
+
+//BEM Selectors
+
+@mixin e($element){
+	
+	&__#{$element}{
+      @content;
+	}
+}
+@mixin m($modifier){
+	&--#{$modifier}{
+	@content;
+	}
+}
+
+
+
+@mixin bg-colors($map){
+@each $theme, $color in $map{
+	&--#{$theme}{
+		background-color: $color;
+		
+	}
+}
+}
+
+@mixin doubly($margin: 1em){
+	& + & {
+		margin-left: $margin;
+		@content;
+	}
+}
+
+// --------------------------Media Query Mixin---------------------------
+
+@mixin mq($break){
+	@if $break == "small" {
+		@media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md){
+		 @content;
+		}
+	}
+	@else if $break == "medium" {
+		@media (min-width: $brkpoint-md + 1){
+			@content;
+		}	
+	}
+	@else if $break == "large"{
+		@media (min-width: $brkpoint-lg){
+			@content;
+		}
+	}
+	@else {
+		@error "'#{$break}' is not a valid query!";
+	}
+
+}
+
+// FlexBox
+@mixin flex($dir:null,$just:null){
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: $dir;
+	justify-content:$just;
+
+}
+
+

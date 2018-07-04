@@ -1,0 +1,37 @@
+// _forms.scss
+.form{
+	
+	padding-top: em(16px);
+	@include e(label){
+	@include m(hidden){
+	display: none; 	
+}
+}
+	@include e(input){
+		width: 100%;
+		font-size: em(18px);
+		padding: em(15px,18px);
+		margin-bottom: em(20px, 18px);
+		color: palette(grey, dark);
+		font-weight: $font-weight--medium;
+		background:white;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 6px solid $color-primary;
+		&:focus{
+		 border-color: palette(grey, x-light);
+		 transition: $trns-duration;
+		 outline: none;
+		}
+	}
+	
+	
+.btn--default{
+	width: 95%;
+}
+}
+
+
+
+

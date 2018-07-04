@@ -1,0 +1,35 @@
+ // _typography.scss
+
+.headline{
+	&--primary{
+	 @extend %headline-prim;
+	 margin-bottom: em(40px, 35px);
+	}
+	&--secondary{
+	
+	 @extend %headline-sec;
+	 margin-bottom: em(20px, 18px);
+	 
+	}
+}
+
+.blockquote{
+	font-size: em(20px);
+	font-style: italic;
+	font-weight: $font-weight--light;
+	margin: em(32px,20px);
+	padding: 0 0 0 4%;
+	border-left: solid em(8px,20px) $color-primary;
+}
+p{
+	font-size: em(18px);
+	line-height: (27px / 18px);
+	margin:0 0 em(30px, 18px);
+	font-weight: $font-weight--light;
+
+}
+
+/*.headline--primary{
+	@extend %headline-prim;
+}*/
+

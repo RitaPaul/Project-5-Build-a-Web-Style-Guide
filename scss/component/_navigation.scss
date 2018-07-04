@@ -1,0 +1,26 @@
+// _navigation.scss
+
+
+.nav{
+
+		margin-top : em(5px);
+		margin-bottom : em(30px);
+		padding: 1em;
+		text-align: left;
+		
+
+	@include e(item){
+		@extend %nav-item-horz;
+		a{
+		    @extend %nav-item-link;
+			color: palette(grey);
+			&:hover{
+			 @extend %nav-item-on;
+			}
+			/*
+			&::selection{
+			 @extend %nav-item-on;
+		 }*/
+		}	
+}
+}

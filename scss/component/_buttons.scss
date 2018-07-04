@@ -1,0 +1,15 @@
+// _buttons.scss
+
+
+.btn{
+	@include bg-colors($ui-colors);
+}
+
+[class^="btn"]{
+	@extend %btn;
+	@include mq(medium){
+}
+}
+
+
+

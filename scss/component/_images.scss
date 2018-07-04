@@ -1,0 +1,34 @@
+// _images.scss
+
+.img{
+
+	
+	@include m(logo){
+	
+	
+
+
+	}
+	@include m(frame){
+	border: 1px solid palette(grey, x-light);
+	padding: em(12px);
+	//
+	
+	}
+	@include m(avatar){
+	
+		//border-radius:$br--round ;
+		//border: 3px solid white;
+		
+		margin-top: em(15px);
+		margin-bottom: em(25px);
+		
+		/*@include mq(large){
+		//height:default;
+		//width: default;
+
+
+		}*/	
+	}
+}
+

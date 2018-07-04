@@ -1,0 +1,20 @@
+
+.grid__row,[class^="grid__col--"]{
+	@include flex($dir:column);
+	@extend .centered;
+	width: 98%;
+	
+
+// --------------Set max width for grid container-----------------------
+	@include mq(large){
+			@include flex($dir:row, $just: center);
+			max-width: $g-cont-max-w;
+	}
+}
+.container{
+	@include mq(large){
+	max-width: $g-cont-max-w;
+	margin: auto;
+	}
+
+}

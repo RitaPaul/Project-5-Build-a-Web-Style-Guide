@@ -1,0 +1,38 @@
+// _grid.scss
+
+// calculate grid columns 
+
+[class^="grid__col--"]  {
+	width: 100%;
+	padding-top: em(5px);
+	padding-bottom: em(5px);
+	margin-top:em(20px);
+	text-align: center;
+
+	.link &{
+	background-color: white;
+	}
+	.form &{
+	background:white;
+	}
+}
+
+.grid__col{
+		@include bg-colors($g-color);
+		}
+		
+@include mq(large){
+
+@for $i from 3 through $g-col-count{
+
+	$context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+	$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+	// Genrate column modifier classes
+	.grid__col--#{$i}
+	{
+		width: percentage($target / $context);
+	}
+}
+}
+

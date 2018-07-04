@@ -1,0 +1,125 @@
+// _Global Vriables
+
+// Fonts
+$font-url--google			: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary		: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary		: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$white: #fff;
+$color-primary: #3cdcb9;
+
+
+// ----------Font Weights----------//
+
+$font-weight--thin			: 100;
+$font-weight--light			: 300;
+$font-weight--medium		: 400;
+$font-weight--bold			: 700;
+$font-weight--ultra-bold	: 900;
+
+
+// ---------Base Colors-----------//
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$fountain-blue        : #3a928c;
+$emrald               : #5ece7f;
+$sunglo               : #e67478;
+$coral                : #ff784f;
+$purple-majesty       : #9279c3;
+$scooter              : #39add1;
+
+  $aquamarine-blue   : #bff2ef;
+  $astral            : #9cc6e3;
+  $bright-turquoise  : #99fdff;
+  $electric-violet   : #e8d0fb;
+  $night-shadz       : #8cd9af;
+  $well-read         : #e4a09b;
+  $camelot           : #dea1be;
+
+
+$g-color:(
+  
+  12      : $aquamarine-blue,
+  6       : $astral,
+  4       : $bright-turquoise,
+  3       : $electric-violet,
+  5       : $night-shadz,
+  8       : $well-read, 
+  7       : $camelot
+
+);
+//----------------UI Colors--------------------------
+
+$ui-colors:(
+  default : $fountain-blue,
+  success : $emrald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
+);
+
+
+
+
+
+//---------------------------------------------------------//
+
+$color-primary      : $fountain-blue;
+$color-secondary    : $scooter;
+$color-accent       : $emrald;
+$color-shadow       : rgba($black, .2);
+
+//-------------Color Palette Modifiers--------------//
+
+$palettes: (
+  grey:(
+	xx-light  : lighten($grey, 43%),
+	x-light   : lighten($grey, 35%),
+	light     : lighten($grey, 12%),
+	base      : $grey,
+	dark      : darken($grey, 8%),
+	x-dark    : darken($grey, 16%)
+   ),
+  black:(
+    light     : lighten($black, 10%),
+  	base      : $black,
+  	dark      : darken($black, 10%)
+
+  )
+);
+
+
+
+
+
+// -----------------Text---------------------
+
+$base__font-size       : 16px;
+$base__line            : 24px;
+$letter-space          : 1px;
+
+// -----------------Text Align---------------------
+
+$center : center;
+
+//---------------- Border radius-------------------
+
+$br--default     : .4em;
+$br--round       : 50%;
+
+//----------------Transition----------------------
+$trns-duration : .3s;
+
+
+//---------------- Grid ----------------------
+$g-col-width			: 50px;
+$g-gutter-width		: 30px;
+$g-col-count			: 12 ;
+$g-cont-max-w			: 1150px;
+
+//---------------- Breakpoints----------------------
+$brkpoint-sm		: 1px;
+$brkpoint-md		: 768px;
+$brkpoint-lg		: 1100px;
